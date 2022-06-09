@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta28
+kind: Config
+metadata:
+  name: skaffold
+deploy:
+  kubectl:
+    manifests:
+      - ./k8s/*
+build:
+  artifacts:
+    - image: sunnyjaiswal22/nic-asdd-lms-admin-portal
+      context: ../admin-portal
+      docker:
+        dockerfile: Dockerfile
