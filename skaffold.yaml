@@ -12,3 +12,11 @@ build:
       context: ../admin-portal
       docker:
         dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: '**/*.html'
+            dest: .
+          - src: '**/*.css'
+            dest: .
+          - src: '**/*.ts'
+            dest: .

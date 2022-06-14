@@ -16,4 +16,4 @@ spec:
               service:
                 name: admin-portal-srv
                 port:
-                  number: 8000
+                  number: 4200
